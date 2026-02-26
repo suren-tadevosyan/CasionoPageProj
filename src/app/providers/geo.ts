@@ -27,26 +27,22 @@ export function getLocaleByGeo(geo: Geo): Locale {
 export const geoAssets: Record<
   Geo,
   {
-    bg: string;
     logo: string;
     slot: string;
     character: string;
   }
 > = {
   AM: {
-    bg: "/assets/geo-am/bg-stars.webp",
     logo: "/assets/geo-am/logo.svg",
     slot: "/assets/geo-am/slot777.png",
     character: "/assets/geo-am/character.png",
   },
   RU: {
-    bg: "/assets/geo-ru/bg-stars.webp",
     logo: "/assets/geo-ru/logo.svg",
     slot: "/assets/geo-ru/slot777.png",
     character: "/assets/geo-ru/character.png",
   },
   US: {
-    bg: "/assets/geo-us/bg-stars.webp",
     logo: "/assets/geo-us/logo.svg",
     slot: "/assets/geo-us/slot777.png",
     character: "/assets/geo-us/character.png",

@@ -1,8 +1,15 @@
 import styled from "styled-components";
 
-export const HeroWrap = styled.section<{ $bg: string }>`
+export const HeroWrap = styled.section`
   min-height: 100vh;
-  background: url(${(p) => p.$bg}) center/cover no-repeat;
+
+  background: linear-gradient(90deg, #06225d 0%, #02011f 100%);
+
+  background-image: url("/assets/bg-stars.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
   display: flex;
   align-items: center;
   justify-content: center;

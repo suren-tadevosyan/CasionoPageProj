@@ -27,7 +27,7 @@ export const BottomInner = styled.div`
 
 export const Character = styled.img`
   grid-area: char;
-  width: 180px;
+  width: 240px;
   height: auto;
   justify-self: start;
 

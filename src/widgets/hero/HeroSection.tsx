@@ -1,4 +1,3 @@
-
 import { useApp } from "../../app/providers/AppProvider";
 import { geoAssets } from "../../app/providers/geo";
 import { useT } from "../../app/providers/i18n";
@@ -11,7 +10,7 @@ export function HeroSection() {
   const assets = geoAssets[state.geo];
 
   return (
-    <HeroWrap $bg={assets.bg}>
+    <HeroWrap>
       <HeroInner>
         <Logo src={assets.logo} alt="Casino Royale" />
         <Slot src={assets.slot} alt="777" />
