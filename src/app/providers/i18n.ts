@@ -3,7 +3,7 @@ import type { Locale } from "./geo";
 
 export const translations: Record<Locale, Record<string, string>> = {
   en: {
-    openGame: "Open Game",
+    openGame: "OPEN THE GAME",
     downloadTitle: "Download Casino",
     downloadSubtitle: "Play anytime, anywhere",
     installApp: "Install App",
