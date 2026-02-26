@@ -1,6 +1,6 @@
-import React from "react";
 import { Button } from "@mui/material";
 import styled from "styled-components";
+import { GlobalStyle } from "./app/styles/GlobalStyle";
 
 const Wrapper = styled.div`
   padding: 40px;
@@ -8,9 +8,12 @@ const Wrapper = styled.div`
 
 export const App = () => {
   return (
-    <Wrapper>
-      <h1>Casino Test</h1>
-      <Button variant="contained">Works</Button>
-    </Wrapper>
+    <>
+      <GlobalStyle />
+      <Wrapper>
+        <h1>Casino Test</h1>
+        <Button variant="contained">Works</Button>
+      </Wrapper>
+    </>
   );
 };

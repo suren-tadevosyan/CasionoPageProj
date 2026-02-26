@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const HeroWrap = styled.section`
+  min-height: 100svh;
   min-height: 100vh;
 
   background: linear-gradient(90deg, #06225d 0%, #02011f 100%);
