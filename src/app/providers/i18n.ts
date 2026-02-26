@@ -12,7 +12,7 @@ export const translations: Record<Locale, Record<string, string>> = {
   },
   ru: {
     openGame: "Открыть игру",
-    downloadTitle: "Скачать приложение",
+    downloadTitle: "Скачать казино",
     downloadSubtitle: "Играйте в любое время",
     installApp: "Установить",
     only18: "Только 18+",
@@ -20,9 +20,9 @@ export const translations: Record<Locale, Record<string, string>> = {
   },
   hy: {
     openGame: "Բացել խաղը",
-    downloadTitle: "Ներբեռնել հավելվածը",
+    downloadTitle: "Ներբեռնել կազինո",
     downloadSubtitle: "Խաղացեք ցանկացած ժամանակ",
-    installApp: "Տեղադրել",
+    installApp: "Ներբեռնել",
     only18: "Միայն 18+",
     socialMedia: "Մենք սոցիալական ցանցերում:",
   },
