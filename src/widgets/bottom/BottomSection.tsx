@@ -1,5 +1,5 @@
 import { useApp } from "../../app/providers/AppProvider";
-import { geoAssets } from "../../app/providers/geo";
+import { geoAssets, geoTheme } from "../../app/providers/geo";
 import { useT } from "../../app/providers/i18n";
 
 import { DownloadCard } from "./DownloadCard";
@@ -23,9 +23,10 @@ export function BottomSection() {
   const { state } = useApp();
   const t = useT();
   const assets = geoAssets[state.geo];
+  const theme = geoTheme[state.geo];
 
   return (
-    <BottomWrap>
+    <BottomWrap $from={theme.bottom.from} $to={theme.bottom.to}>
       <BottomInner>
         <Character src={assets.character} alt="character" />
 

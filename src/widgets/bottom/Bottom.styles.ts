@@ -1,7 +1,11 @@
 import styled from "styled-components";
 
-export const BottomWrap = styled.section`
-  background: linear-gradient(90deg, #02011f 0%, #06225d 100%);
+export const BottomWrap = styled.section<{ $from: string; $to: string }>`
+  background: linear-gradient(
+    90deg,
+    ${(p) => p.$from} 0%,
+    ${(p) => p.$to} 100%
+  );
   padding: 40px 32px;
 `;
 
