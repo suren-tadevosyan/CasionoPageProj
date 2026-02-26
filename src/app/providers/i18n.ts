@@ -7,7 +7,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     downloadTitle: "Download Casino",
     downloadSubtitle: "Play anytime, anywhere",
     installApp: "Install App",
-    only18: "Only for 18+ players",
+    only18: "Only 18+ ",
     socialMedia: "Us in social media:",
   },
   ru: {
@@ -15,7 +15,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     downloadTitle: "Скачать приложение",
     downloadSubtitle: "Играйте в любое время",
     installApp: "Установить",
-    only18: "Только для игроков 18+",
+    only18: "Только 18+",
     socialMedia: "Мы в соцсетях:",
   },
   hy: {
@@ -23,7 +23,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     downloadTitle: "Ներբեռնել հավելվածը",
     downloadSubtitle: "Խաղացեք ցանկացած ժամանակ",
     installApp: "Տեղադրել",
-    only18: "Միայն 18+ խաղացողների համար",
+    only18: "Միայն 18+",
     socialMedia: "Մենք սոցիալական ցանցերում:",
   },
 };

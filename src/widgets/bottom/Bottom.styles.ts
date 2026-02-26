@@ -56,12 +56,17 @@ export const InfoCol = styled.div`
     justify-self: center;
     align-items: flex-start;
     justify-content: center;
-    gap: 28px;
+    gap: 180px;
     margin-top: 52px;
+    margin-left: 52px;
   }
 
   @media (max-width: 480px) {
     flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+    gap: 24px;
   }
 `;
 
@@ -71,7 +76,7 @@ export const RowWithIcon = styled.div`
   gap: 8px;
 
   @media (max-width: 1200px) {
-    width: 287px;
+    max-width: 287px;
     flex-direction: column;
     align-items: center;
     text-align: center;

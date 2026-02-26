@@ -1,28 +1,36 @@
-
 import styled from "styled-components";
 import { useT } from "../../app/providers/i18n";
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-end; 
+  align-items: flex-end;
   gap: 12px;
+
+  @media (max-width: 1200px) {
+    align-items: center;
+  }
 `;
 
 const Title = styled.div`
   font-size: 14px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.65);
-  text-align: right; 
-
+  text-align: right;
+  @media (max-width: 1200px) {
+    text-align: center;
+  }
 `;
 
 const Wrap = styled.div`
   display: flex;
   gap: 8px;
   align-items: center;
-`;
 
+  @media (max-width: 1200px) {
+    justify-content: center;
+  }
+`;
 const IconBtn = styled.a`
   width: 52px;
   height: 52px;

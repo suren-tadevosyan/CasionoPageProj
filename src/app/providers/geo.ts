@@ -34,19 +34,19 @@ export const geoAssets: Record<
   }
 > = {
   AM: {
-    bg: "/assets/geo-am/bg-stars.png",
+    bg: "/assets/geo-am/bg-stars.webp",
     logo: "/assets/geo-am/logo.svg",
     slot: "/assets/geo-am/slot777.png",
     character: "/assets/geo-am/character.png",
   },
   RU: {
-    bg: "/assets/geo-ru/bg-stars.png",
+    bg: "/assets/geo-ru/bg-stars.webp",
     logo: "/assets/geo-ru/logo.svg",
     slot: "/assets/geo-ru/slot777.png",
     character: "/assets/geo-ru/character.png",
   },
   US: {
-    bg: "/assets/geo-us/bg-stars.png",
+    bg: "/assets/geo-us/bg-stars.webp",
     logo: "/assets/geo-us/logo.svg",
     slot: "/assets/geo-us/slot777.png",
     character: "/assets/geo-us/character.png",
