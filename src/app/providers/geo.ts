@@ -58,12 +58,12 @@ export const geoTheme: Record<
 > = {
   AM: {
     button: {
-      from: "#FF8D6B",
-      to: "#FFBA47",
-      hoverFrom: "#FF7C55",
-      hoverTo: "#FFB033",
+      from: "#4FACFE",
+      to: "#00F2FE",
+      hoverFrom: "#2F9BFF",
+      hoverTo: "#00DCE6",
     },
-    bottom: { from: "#02011F", to: "#06225D" },
+    bottom: { from: "#02011F", to: "#0A2A66" },
   },
   RU: {
     button: {
@@ -76,11 +76,29 @@ export const geoTheme: Record<
   },
   US: {
     button: {
-      from: "#4FACFE",
-      to: "#00F2FE",
-      hoverFrom: "#2F9BFF",
-      hoverTo: "#00DCE6",
+      from: "#FF8D6B",
+      to: "#FFBA47",
+      hoverFrom: "#FF7C55",
+      hoverTo: "#FFB033",
     },
-    bottom: { from: "#02011F", to: "#0A2A66" },
+    bottom: { from: "#02011F", to: "#06225D" },
   },
 };
+
+export function detectInitialGeo(): Geo {
+  const saved = localStorage.getItem("geo") as Geo | null;
+  if (saved === "AM" || saved === "RU" || saved === "US") {
+    return saved;
+  }
+
+  const lang = (
+    navigator.languages?.[0] ||
+    navigator.language ||
+    ""
+  ).toLowerCase();
+
+  if (lang.startsWith("hy")) return "AM";
+  if (lang.startsWith("ru")) return "RU";
+
+  return "US";
+}
